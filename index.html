@@ -1,12 +1,121 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My site</title>
-  </head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HeartShare - Real-Time Heart Rate Sharing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
   <body>
-    <h1>Hello!</h1>
-    <p>Deployed with GitHub Pages.</p>
+    <header>
+      <section class="hero">
+        <div class="container">
+            <div>
+                <img src="./img/heartshare_hero.webp" alt="HeartShare Logo" class="hero-logo" width="60" height="60">
+            </div>
+          <h2 class="hero-title">HeartShare</h2>
+          <p class="hero-subtitle">Connect your device and share heart rate with the Coach</p>
+            <div class="store-buttons">
+                <a href="#" class="store-button"><img src="./img/app-store.svg" alt="" width="120" height="40"></a>
+                <a href="#" class="store-button"><img src="./img/google-play.svg" alt="" width="120" height="40"></a>
+            </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="about">
+        <div class="container">
+          <h3 class="section-title">About the App</h3>
+          <p class="about-text">
+            HeartShare is a real-time heart rate sharing app built for athletes and coaches.
+            It lets you broadcast your live pulse from a wide range of devices to a shared session,
+            so coaches can monitor intensity, adjust workouts on the fly, and keep everyone training
+            in the right zone: whether you're in the gym, on the track, or remote.
+          </p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <h3 class="section-title">Features</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4 class="feature-title">Live Heart Rate Sharing</h4>
+              <p class="feature-text">
+                Broadcast your heart rate in real time so coaches and teammates can follow your
+                intensity during a workout.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <h4 class="feature-title">Coach View (No Payment Required)</h4>
+              <p class="feature-text">
+                Coaches can join a session with a simple code and monitor athletes live—no
+                subscription needed.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <h4 class="feature-title">Multi-Device Connectivity</h4>
+              <p class="feature-text">
+                Connect with a wide range of heart-rate devices and wearables, so you can train
+                with what you already have.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="data-collection">
+        <div class="container">
+          <h3 class="section-title">Data Collection</h3>
+          <p class="data-text">
+            HeartShare collects minimal data to provide its services:
+          </p>
+          <ul class="data-list">
+            <li>
+              <strong>Account information:</strong> Email address or sign-in identifier
+              (Authorization is required to restore your subscription across devices.)
+            </li>
+            <li>
+              <strong>Subscription status:</strong> Used to verify and restore access to paid features.
+            </li>
+            <li>
+              <strong>Advertising data:</strong> AdMob may collect device identifiers and basic
+              device information to display and measure ads in the free version.
+            </li>
+          </ul>
+          <p class="data-text">
+            We do not sell your personal data to third parties. Data is used to provide app
+            functionality, manage subscriptions, and display ads.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h3 class="section-title">Contact</h3>
+          <p class="contact-text"><strong>Developer:</strong> Anton</p>
+          <p class="contact-text"><strong>Email:</strong> <a href="mailto:heartshare.help@gmail.com">heartshare.help@gmail.com</a></p>
+          <p class="contact-text">
+            For any questions, support requests, or feedback, please contact us via email.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <a href="./privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="./delete-account.html" class="footer-link">Delete Account & Data</a>
+        </nav>
+        <p class="footer-copyright">&copy; 2026 HeartShare. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
