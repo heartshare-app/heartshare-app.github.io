@@ -159,6 +159,23 @@ body {
 
 .data-collection {
     padding: 80px 0;
+    background-color: #f9fafb;
+}
+
+.devices-guide {
+    padding: 80px 0;
+}
+
+.guide-link {
+    color: #13B601;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.guide-link:hover {
+    text-decoration: underline;
 }
 
 .data-text {
@@ -304,6 +321,119 @@ body {
     text-decoration: underline;
 }
 
+.device-intro {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.device-list {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+}
+
+.device-list li {
+    margin-bottom: 8px;
+}
+
+.device-list li a {
+    color: #13B601;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.device-list li a:hover {
+    text-decoration: underline;
+}
+
+.device-section {
+    padding: 80px 0;
+}
+
+.device-section--grey {
+    background-color: #f9fafb;
+}
+
+.device-section--white {
+    background-color: #ffffff;
+}
+
+.device-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #13B601;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.device-title small {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+.device-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.device-step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+}
+
+.device-step-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.device-step-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #111827;
+    max-width: 280px;
+}
+
+.device-step--video {
+    width: 100%;
+    max-width: 640px;
+}
+
+.device-video-wrap {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
+
+.device-video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.device-step--video .device-step-desc {
+    max-width: 640px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 36px;
@@ -326,6 +456,22 @@ body {
 
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .device-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .device-section {
+        padding: 48px 0;
+    }
+
+    .device-intro {
+        padding: 48px 0;
+    }
+
+    .device-title {
+        font-size: 24px;
     }
 
     .legal-page {
