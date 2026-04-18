@@ -73,11 +73,9 @@ body {
     margin: 0 auto;
 }
 
-.store-buttons {
-    display: grid;
-    gap: 12px;
-    grid-template-columns: 1fr 1fr;
-    max-width: 360px;
+.store-button-container {
+    display: flex;
+    max-width: 120px;
     margin: 24px auto 0;
 }
 
