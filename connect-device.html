@@ -1,135 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How to Connect Your Device - HeartShare</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Connect Your Heart Rate Device — Apple Watch, Garmin, Whoop, Mi Band | HeartShare</title>
+<meta name="description" content="Step-by-step pairing instructions for HeartShare: Apple Watch, Garmin watches, Garmin and other BLE chest straps, Whoop, and Xiaomi Mi Band 10. Turn on heart rate broadcasting and the app finds your device automatically.">
+<link rel="canonical" href="https://heartshare-app.github.io/connect-device.html">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="HeartShare">
+<meta property="og:title" content="How to Connect Your Heart Rate Device — HeartShare">
+<meta property="og:description" content="Pairing instructions for Apple Watch, Garmin, Whoop, BLE chest straps and Xiaomi Mi Band 10.">
+<meta property="og:url" content="https://heartshare-app.github.io/connect-device.html">
+<link rel="icon" href="img/app-icon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <a href="/" class="logo"><img src="./img/heartshare_logo.webp" alt="HeartShare Logo" class="header-logo" width="32" height="32"><span>HeartShare</span></a>
-    </div>
+<header id="site-header">
+<div class="wrap nav">
+<a class="brand" href="index.html"><img src="img/app-icon.png" alt="HeartShare app icon">HeartShare</a>
+<nav class="nav-links" aria-label="Primary">
+<a href="index.html#how">How it works</a>
+<a href="index.html#features">Features</a>
+<a href="connect-device.html">Device guide</a>
+<a href="index.html#faq">FAQ</a>
+</nav>
+<a class="btn btn-primary" href="index.html#get">Get the app</a>
+</div>
 </header>
 
 <main>
-    <section class="device-intro">
-        <div class="container">
-            <h1 class="legal-title">How to Connect Your Device</h1>
-            <p class="about-text">Select your device below to see step-by-step instructions:</p>
-            <ul class="device-list">
-                <li><a href="#device-1">Apple Watch</a></li>
-                <li><a href="#device-2">Garmin Watch</a></li>
-                <li><a href="#device-3">Garmin HR Strap &amp; others</a></li>
-                <li><a href="#device-4">Whoop</a></li>
-                <li><a href="#device-5">Xiaomi Mi Band 10</a></li>
-            </ul>
-        </div>
-    </section>
+<div class="page-head">
+<div class="wrap">
+<span class="eyebrow">Device guide</span>
+<h1>How to connect your heart rate device</h1>
+<p>HeartShare reads any device that broadcasts heart rate over Bluetooth Low Energy. In most cases you only need to switch broadcasting on — don't pair the device in your phone's Bluetooth settings, the app finds it by itself.</p>
+<p class="updated">Covers Apple Watch · Garmin watches · Garmin, Coospo, Moofit &amp; other straps · Whoop · Xiaomi Mi Band 10</p>
+</div>
+</div>
 
-    <section id="device-1" class="device-section device-section--grey">
-        <div class="container">
-            <h2 class="device-title">Apple Watch</h2>
-            <div class="device-steps">
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_applewatch1.webp" alt="Apple Watch - Step 1" class="device-step-img">
-                    <p class="device-step-desc">Install and open HeartShare app for Apple Watch. Click "Start" button</p>
-                </div>
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_applewatch2.webp" alt="Apple Watch - Step 2" class="device-step-img">
-                    <p class="device-step-desc">Your device is ready! Find it in the app</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="wrap doc">
+<aside class="toc">
+<h4>Devices</h4>
+<a href="#apple-watch">Apple Watch</a>
+<a href="#garmin-watch">Garmin watch</a>
+<a href="#hr-strap">HR straps</a>
+<a href="#whoop">Whoop</a>
+<a href="#mi-band">Xiaomi Mi Band 10</a>
+<a href="#troubleshooting">Troubleshooting</a>
+</aside>
 
-    <section id="device-2" class="device-section device-section--white">
-        <div class="container">
-            <h2 class="device-title">Garmin Watch</h2>
-            <div class="device-steps">
-                <div class="device-step device-step--video">
-                    <div class="device-video-wrap">
-                        <iframe
-                            src="https://www.youtube.com/embed/ALImq3nTR3M?si=tDW2yCZtolybm6Tc"
-                            title="YouTube video player"
-                            loading="lazy"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                    <p class="device-step-desc">Activate Broadcasting via Menu &rarr; Health &amp; Wellness &rarr; Heart Rate &rarr; Broadcast Heart Rate</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div>
+<div class="callout"><strong>Before you start:</strong> wear the device so the sensor sits snug against your skin, make sure Bluetooth is on for your phone, and keep the device within a few metres. HeartShare scans automatically when you open the connection screen.</div>
 
-    <section id="device-3" class="device-section device-section--grey">
-        <div class="container">
-            <h2 class="device-title">Garmin HR Strap &amp; others<br><small>(Colar, Moofit, CooSpo…)</small></h2>
-            <div class="device-steps">
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_hr_straps.webp" alt="HR Strap - Step 1" class="device-step-img">
-                    <p class="device-step-desc">Wear your device properly. Do not connect it via Bluetooth — the app will find it automatically</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="dev-block" id="apple-watch">
+<h2>Apple Watch</h2>
+<p class="dev-sub">Use the HeartShare watch app — it streams your pulse straight to your iPhone session.</p>
+<div class="stepgrid">
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_applewatch1.webp" alt="HeartShare app on Apple Watch with the Start button highlighted" loading="lazy"></div><figcaption class="body"><span class="n">1</span><p>Install and open the HeartShare app for Apple Watch, then tap <strong>Start</strong>.</p></figcaption></figure>
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_applewatch2.webp" alt="Apple Watch showing HeartShare is broadcasting and ready" loading="lazy"></div><figcaption class="body"><span class="n">2</span><p>Your device is ready — find it in the list on your iPhone and start the session.</p></figcaption></figure>
+</div>
+</section>
 
-    <section id="device-4" class="device-section device-section--white">
-        <div class="container">
-            <h2 class="device-title">Whoop</h2>
-            <div class="device-steps">
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_whoop1.webp" alt="Whoop - Step 1" class="device-step-img">
-                    <p class="device-step-desc">Click on "More" and then select Device setting</p>
-                </div>
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_whoop2.webp" alt="Whoop - Step 2" class="device-step-img">
-                    <p class="device-step-desc">Switch toggle "Broadcast Heart Rate"</p>
-                </div>
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_whoop3.webp" alt="Whoop - Step 3" class="device-step-img">
-                    <p class="device-step-desc">Your device is ready!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="dev-block" id="garmin-watch">
+<h2>Garmin watch</h2>
+<p class="dev-sub">Garmin watches broadcast heart rate over ANT+/BLE once you enable it in the watch menu.</p>
+<div class="callout">Menu → <strong>Health &amp; Wellness</strong> → <strong>Heart Rate</strong> → <strong>Broadcast Heart Rate</strong>. Leave the broadcast screen open while you train.</div>
+<div class="videobox"><iframe src="https://www.youtube.com/embed/ALImq3nTR3M?si=tDW2yCZtolybm6Tc" title="How to broadcast heart rate from a Garmin watch" loading="lazy" allowfullscreen></iframe></div>
+</section>
 
-    <section id="device-5" class="device-section device-section--grey">
-        <div class="container">
-            <h2 class="device-title">Xiaomi Mi Band 10</h2>
-            <div class="device-steps">
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_miband10_1.webp" alt="Xiaomi Mi Band 10 - Step 1" class="device-step-img">
-                    <p class="device-step-desc">Open the Settings menu on your Mi Band 10</p>
-                </div>
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_miband10_2.webp" alt="Xiaomi Mi Band 10 - Step 2" class="device-step-img">
-                    <p class="device-step-desc">Find "Share HR" in the settings list</p>
-                </div>
-                <div class="device-step">
-                    <img src="./img/instructions/instruction_miband10_3.webp" alt="Xiaomi Mi Band 10 - Step 3" class="device-step-img">
-                    <p class="device-step-desc">Turn on broadcasting — then find your device in the mobile app!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="dev-block" id="hr-strap">
+<h2>Garmin HR strap &amp; others</h2>
+<p class="dev-sub">Coospo, Moofit, Polar, Wahoo and most other BLE chest straps and armbands work the same way.</p>
+<div class="stepgrid">
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_hr_straps.webp" alt="Heart rate chest strap worn correctly below the chest muscles" loading="lazy"></div><figcaption class="body"><span class="n">1</span><p>Wear the strap properly and moisten the contacts. <strong>Do not pair it in Bluetooth settings</strong> — HeartShare finds it automatically.</p></figcaption></figure>
+</div>
+</section>
+
+<section class="dev-block" id="whoop">
+<h2>Whoop</h2>
+<p class="dev-sub">Turn on broadcasting in the Whoop app, then return to HeartShare.</p>
+<div class="stepgrid">
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_whoop1.webp" alt="Whoop app More menu with Device settings highlighted" loading="lazy"></div><figcaption class="body"><span class="n">1</span><p>Open <strong>More</strong> and select <strong>Device settings</strong>.</p></figcaption></figure>
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_whoop2.webp" alt="Whoop device settings with the Broadcast Heart Rate toggle switched on" loading="lazy"></div><figcaption class="body"><span class="n">2</span><p>Switch on <strong>Broadcast Heart Rate</strong>.</p></figcaption></figure>
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_whoop3.webp" alt="Whoop app confirming heart rate broadcasting is active" loading="lazy"></div><figcaption class="body"><span class="n">3</span><p>Your device is ready — open HeartShare and select it.</p></figcaption></figure>
+</div>
+</section>
+
+<section class="dev-block" id="mi-band">
+<h2>Xiaomi Mi Band 10</h2>
+<p class="dev-sub">Mi Band calls the feature "Share HR".</p>
+<div class="stepgrid">
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_miband10_1.webp" alt="Settings menu on the Xiaomi Mi Band 10" loading="lazy"></div><figcaption class="body"><span class="n">1</span><p>Open the <strong>Settings</strong> menu on your Mi Band 10.</p></figcaption></figure>
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_miband10_2.webp" alt="Share HR entry in the Mi Band 10 settings list" loading="lazy"></div><figcaption class="body"><span class="n">2</span><p>Find <strong>Share HR</strong> in the settings list.</p></figcaption></figure>
+<figure class="stepcard"><div class="shotwrap"><img src="img/instructions/instruction_miband10_3.webp" alt="Mi Band 10 broadcasting heart rate" loading="lazy"></div><figcaption class="body"><span class="n">3</span><p>Turn broadcasting on, then find your device in the mobile app.</p></figcaption></figure>
+</div>
+</section>
+
+<section class="dev-block" id="troubleshooting">
+<h2>Device not showing up?</h2>
+<div class="prose">
+<ul>
+<li><strong>Unpair it from your phone's Bluetooth settings.</strong> A device already connected to the OS can't broadcast to the app.</li>
+<li><strong>Check broadcasting is still on.</strong> Most watches stop broadcasting when the screen or the broadcast view is closed.</li>
+<li><strong>Close other apps using the sensor</strong> — training apps hold an exclusive connection to the strap.</li>
+<li><strong>Restart the device</strong> and moisten the strap contacts; dry electrodes give no signal.</li>
+</ul>
+<p>Still stuck? Email <a href="mailto:HeartShare.help@gmail.com">HeartShare.help@gmail.com</a> with your device model and we'll help.</p>
+</div>
+</section>
+</div>
+</div>
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <nav class="footer-nav">
-            <a href="./privacy.html" class="footer-link">Privacy Policy</a>
-            <a href="./delete-account.html" class="footer-link">Delete Account & Data</a>
-        </nav>
-        <p class="footer-copyright">&copy; 2026 HeartShare. All rights reserved.</p>
-    </div>
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a class="brand" href="index.html"><img src="img/app-icon.png" alt="">HeartShare</a>
+<p style="color:var(--ink-2);margin-top:14px;max-width:34ch">Real-time heart rate sharing for athletes and coaches. Broadcast your pulse, train in the right zone.</p>
+</div>
+<div><h4>App</h4><div class="foot-links"><a href="https://apps.apple.com/ua/app/heartshare/id6759251996">iOS — App Store</a><a href="https://play.google.com/store/apps/details?id=com.rkh.heartshare">Android — Google Play</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a></div></div>
+<div><h4>Support</h4><div class="foot-links"><a href="connect-device.html">Device guide</a><a href="index.html#faq">FAQ</a><a href="mailto:HeartShare.help@gmail.com">HeartShare.help@gmail.com</a></div></div>
+<div><h4>Legal</h4><div class="foot-links"><a href="privacy.html">Privacy policy</a><a href="delete-account.html">Delete account &amp; data</a></div></div>
+</div>
+<div class="foot-bottom">
+<span>© 2026 HeartShare · Developer: Roman Paraniuk</span>
+<span>Last updated <time datetime="2026-09-22">22 September 2026</time></span>
+</div>
+</div>
 </footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"HowTo","name":"How to connect a heart rate device to HeartShare","description":"Enable heart rate broadcasting on your wearable and HeartShare finds it automatically over Bluetooth Low Energy.","totalTime":"PT2M","step":[
+{"@type":"HowToSection","name":"Apple Watch","itemListElement":[{"@type":"HowToStep","position":1,"text":"Install and open the HeartShare app for Apple Watch, then tap Start."},{"@type":"HowToStep","position":2,"text":"Your device is ready — find it in the list on your iPhone and start the session."}]},
+{"@type":"HowToSection","name":"Garmin watch","itemListElement":[{"@type":"HowToStep","position":1,"text":"On the watch open Menu → Health & Wellness → Heart Rate → Broadcast Heart Rate and leave the broadcast screen open."}]},
+{"@type":"HowToSection","name":"Garmin HR strap and other BLE straps","itemListElement":[{"@type":"HowToStep","position":1,"text":"Wear the strap properly and do not pair it in your phone's Bluetooth settings — HeartShare finds it automatically."}]},
+{"@type":"HowToSection","name":"Whoop","itemListElement":[{"@type":"HowToStep","position":1,"text":"Open More and select Device settings."},{"@type":"HowToStep","position":2,"text":"Switch on Broadcast Heart Rate."},{"@type":"HowToStep","position":3,"text":"Open HeartShare and select the device."}]},
+{"@type":"HowToSection","name":"Xiaomi Mi Band 10","itemListElement":[{"@type":"HowToStep","position":1,"text":"Open the Settings menu on the Mi Band 10."},{"@type":"HowToStep","position":2,"text":"Find Share HR in the settings list."},{"@type":"HowToStep","position":3,"text":"Turn broadcasting on and select the device in the mobile app."}]}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"My heart rate device does not show up in HeartShare. What should I do?","acceptedAnswer":{"@type":"Answer","text":"Unpair the device from your phone's Bluetooth settings, check that broadcasting is still enabled on the device, close other training apps that hold the sensor, restart the device and moisten the strap contacts."}},
+{"@type":"Question","name":"Do I need to pair my chest strap in Bluetooth settings?","acceptedAnswer":{"@type":"Answer","text":"No. Do not pair the strap in your phone's Bluetooth settings — HeartShare discovers broadcasting devices automatically. A device already connected to the operating system cannot broadcast to the app."}}]},
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"HeartShare","item":"https://heartshare-app.github.io/"},
+{"@type":"ListItem","position":2,"name":"Device guide","item":"https://heartshare-app.github.io/connect-device.html"}]}
+]}
+</script>
+<script>
+const h=document.getElementById('site-header');
+addEventListener('scroll',()=>h.classList.toggle('stuck',scrollY>8),{passive:true});
+</script>
 </body>
 </html>
