@@ -1,0 +1,38 @@
+# HeartShare
+
+> HeartShare is a real-time heart rate sharing app for athletes and coaches. An athlete pairs a Bluetooth Low Energy heart rate monitor or smartwatch, starts a session, and shares a short access key; the coach enters that key and watches the live pulse, training zone and trend from their own phone — over Wi-Fi or mobile data, anywhere in the world. Free to download on iOS and Android, and the coach view needs no subscription.
+
+## Key facts
+
+- Platforms: iOS (iPhone, iPad, Apple Watch) and Android
+- iOS: version 1.2.0, requires iOS 18.6 or later, age rating 4+
+- Android: version 1.2, requires Android 7.0 or later, rated for 3+
+- Price: free to download. The coach view is free and needs no subscription.
+- HeartShare Pro (in-app, optional): $0.99/month, $9.99/year, or $22.99 lifetime. Pro removes ads and unlocks extended athlete features.
+- Devices: any standard Bluetooth LE heart rate monitor — chest straps, armbands, compatible smartwatches — plus Apple Watch on iOS. Tested with Apple Watch, Garmin watches, Garmin/Coospo/Moofit and other BLE straps, Whoop, and Xiaomi Mi Band 10.
+- Access key: a 10-character code the athlete shares with the coach. No account is needed for the coach.
+- Session length: a session ends when the athlete stops it, or automatically after 2 hours.
+- Data: heart rate is processed session-only and is never stored after a session ends, and never used for advertising or marketing.
+- Not a medical device. HeartShare is a training and fitness tool, not intended for diagnosis or medical monitoring.
+- Developer: Roman Paraniuk. Support: HeartShare.help@gmail.com
+
+## Pages
+
+- [Home](https://heartshare-app.github.io/): what HeartShare is, how it works in three steps, features, supported devices, app screens, and FAQ.
+- [Device guide](https://heartshare-app.github.io/connect-device.html): step-by-step pairing for Apple Watch, Garmin watches, BLE chest straps, Whoop and Xiaomi Mi Band 10, plus troubleshooting when a device does not appear.
+- [Privacy policy](https://heartshare-app.github.io/privacy.html): what data is collected, how it is used, retention, your rights, and contact details.
+- [Delete account & data](https://heartshare-app.github.io/delete-account.html): how to request permanent deletion of an account and what gets deleted.
+
+## Download
+
+- [App Store (iOS)](https://apps.apple.com/ua/app/heartshare/id6759251996)
+- [Google Play (Android)](https://play.google.com/store/apps/details?id=com.rkh.heartshare)
+
+## Common questions
+
+- Is HeartShare free? Yes — free to download on iOS and Android, and the coach view is free with no subscription. HeartShare Pro is an optional in-app subscription that removes ads and unlocks extended athlete features.
+- Do coaches need to pay or create an account? No. A coach only needs the athlete's access key.
+- How does a coach join a session? The athlete starts sharing, the app generates an access key, and the coach enters that key in the app to see the live heart rate.
+- Which devices work? Any standard Bluetooth LE heart rate monitor, plus Apple Watch on iOS.
+- Does it work remotely? Yes — sharing runs over Wi-Fi or mobile data, so the coach can be in another gym, city or country.
+- Can an athlete on iOS share with a coach on Android? Yes — athletes and coaches can be on different platforms in the same session.

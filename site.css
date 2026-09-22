@@ -112,6 +112,13 @@ header.stuck{border-color:var(--hair);box-shadow:0 6px 24px rgba(17,24,39,.05)}
 .qa h3{font-size:18px;font-weight:600;letter-spacing:-.015em;margin-bottom:8px}
 .qa p{color:var(--ink-2);font-size:16px}
 .qa p+p{margin-top:8px}
+/* FAQ: expanded on desktop, collapsible under 980px (see the sync script in index.html) */
+details.qa>summary{display:flex;align-items:flex-start;gap:12px;list-style:none;cursor:default}
+details.qa>summary::-webkit-details-marker{display:none}
+details.qa>summary h3{margin-bottom:0;flex:1}
+details.qa[open]>summary h3{margin-bottom:8px}
+details.qa>summary .chev{display:none;flex:none;width:20px;height:20px;margin-top:2px;color:var(--ink-3);transition:transform .2s}
+details.qa[open]>summary .chev{transform:rotate(180deg)}
 .cta-box{background:var(--grad);border-radius:var(--r-xl);padding:clamp(36px,5vw,64px);color:#fff;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;box-shadow:var(--shadow-green)}
 .cta-box h2{font-size:clamp(28px,3.6vw,44px);font-weight:800}
 .cta-box p{color:rgba(255,255,255,.88);margin-top:14px;font-size:18px;max-width:40ch}
@@ -171,6 +178,9 @@ footer{background:#fff;border-top:1px solid var(--hair);padding:56px 0 40px;font
 .videobox{margin-top:24px;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-sm);aspect-ratio:16/9;background:#000}
 .videobox iframe{width:100%;height:100%;border:0;display:block}
 @media (max-width:980px){
+details.qa>summary{cursor:pointer}
+details.qa>summary .chev{display:block}
+details.qa>summary:hover h3{color:var(--green)}
 .hero-grid{grid-template-columns:1fr;gap:44px}
 .hero-col{align-items:center;text-align:center}
 .hero .lede{max-width:52ch}
@@ -192,3 +202,13 @@ footer{background:#fff;border-top:1px solid var(--hair);padding:56px 0 40px;font
 }
 @media (max-width:560px){.facts{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.float-b{left:-4%}.float-a{right:-2%}.gallery{grid-template-columns:1fr;max-width:320px}.foot-grid{grid-template-columns:1fr;gap:28px}.nav{gap:14px}.nav .btn{padding:9px 16px}.card,.step{padding:22px}.qa{padding:18px 20px}.cta-box{padding:28px 22px}.stepcard .shotwrap img{max-height:240px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+/* ── specs table ────────────────────────────────────── */
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.spec-table{overflow-x:auto;border:1px solid var(--border);border-radius:var(--r-lg);background:#fff;box-shadow:var(--shadow-sm)}
+.spec-table table{width:100%;border-collapse:collapse;font-size:16px;min-width:600px}
+.spec-table thead th{text-align:left;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);padding:16px 22px;border-bottom:1px solid var(--border);background:var(--green-tint)}
+.spec-table tbody th{text-align:left;font-weight:600;color:var(--ink);padding:15px 22px;width:34%;vertical-align:top}
+.spec-table td{color:var(--ink-2);padding:15px 22px;vertical-align:top}
+.spec-table tbody tr+tr th,.spec-table tbody tr+tr td{border-top:1px solid var(--hair)}
+.spec-note{margin-top:16px;font-size:14px;color:var(--ink-3)}
+@media (max-width:560px){.spec-table thead th,.spec-table tbody th,.spec-table td{padding:13px 16px}.spec-table table{font-size:15px}}
