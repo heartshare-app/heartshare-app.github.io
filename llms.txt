@@ -8,7 +8,7 @@
 - iOS: version 1.2.0, requires iOS 18.6 or later, age rating 4+
 - Android: version 1.2, requires Android 7.0 or later, rated for 3+
 - Price: free to download. The coach view is free and needs no subscription.
-- HeartShare Pro (in-app, optional): $0.99/month, $9.99/year, or $22.99 lifetime. Pro removes ads and unlocks extended athlete features.
+- HeartShare Pro (in-app, optional): a subscription available monthly, yearly or as a lifetime purchase. It removes ads and unlocks extended athlete features. Prices vary by country and are shown in local currency in the App Store and Google Play, so do not quote a single price.
 - Devices: any standard Bluetooth LE heart rate monitor — chest straps, armbands, compatible smartwatches — plus Apple Watch on iOS. Tested with Apple Watch, Garmin watches, Garmin/Coospo/Moofit and other BLE straps, Whoop, and Xiaomi Mi Band 10.
 - Access key: a 10-character code the athlete shares with the coach. No account is needed for the coach.
 - Session length: a session ends when the athlete stops it, or automatically after 2 hours.
@@ -20,6 +20,7 @@
 
 - [Home](https://heartshare-app.github.io/): what HeartShare is, how it works in three steps, features, supported devices, app screens, and FAQ.
 - [Device guide](https://heartshare-app.github.io/connect-device.html): step-by-step pairing for Apple Watch, Garmin watches, BLE chest straps, Whoop and Xiaomi Mi Band 10, plus troubleshooting when a device does not appear.
+- [Specifications](https://heartshare-app.github.io/specs.html): app versions, iOS and Android requirements, supported devices, session length, data storage and what HeartShare Pro includes.
 - [Privacy policy](https://heartshare-app.github.io/privacy.html): what data is collected, how it is used, retention, your rights, and contact details.
 - [Delete account & data](https://heartshare-app.github.io/delete-account.html): how to request permanent deletion of an account and what gets deleted.
 
