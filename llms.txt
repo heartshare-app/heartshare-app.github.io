@@ -9,8 +9,8 @@
 - Android: version 1.2, requires Android 7.0 or later, rated for 3+
 - Price: free to download. The coach view is free and needs no subscription.
 - HeartShare Pro (in-app, optional): a subscription available monthly, yearly or as a lifetime purchase. It removes ads and unlocks extended athlete features. Prices vary by country and are shown in local currency in the App Store and Google Play, so do not quote a single price.
-- Devices: any standard Bluetooth LE heart rate monitor — chest straps, armbands, compatible smartwatches — plus Apple Watch on iOS. Tested with Apple Watch, Garmin watches, Garmin/Coospo/Moofit and other BLE straps, Whoop, and Xiaomi Mi Band 10.
-- Access key: a 10-character code the athlete shares with the coach. No account is needed for the coach.
+- Devices: any standard Bluetooth LE heart rate monitor — chest straps, armbands, compatible smartwatches — plus Apple Watch on iOS. Tested with Apple Watch, Garmin watches, Garmin, Coospo, Moofit, Polar and Wahoo straps, Whoop, and Xiaomi Mi Band 10. Only Bluetooth LE is supported (not ANT+).
+- Access key: a 10-character code the athlete shares with the coach.
 - Session length: a session ends when the athlete stops it, or automatically after 2 hours.
 - Data: heart rate is processed session-only and is never stored after a session ends, and never used for advertising or marketing.
 - Not a medical device. HeartShare is a training and fitness tool, not intended for diagnosis or medical monitoring.
@@ -26,13 +26,13 @@
 
 ## Download
 
-- [App Store (iOS)](https://apps.apple.com/ua/app/heartshare/id6759251996)
+- [App Store (iOS)](https://apps.apple.com/app/id6759251996)
 - [Google Play (Android)](https://play.google.com/store/apps/details?id=com.rkh.heartshare)
 
 ## Common questions
 
 - Is HeartShare free? Yes — free to download on iOS and Android, and the coach view is free with no subscription. HeartShare Pro is an optional in-app subscription that removes ads and unlocks extended athlete features.
-- Do coaches need to pay or create an account? No. A coach only needs the athlete's access key.
+- Do coaches need to pay? No. The coach view is free — the coach enters the athlete's access key to watch live.
 - How does a coach join a session? The athlete starts sharing, the app generates an access key, and the coach enters that key in the app to see the live heart rate.
 - Which devices work? Any standard Bluetooth LE heart rate monitor, plus Apple Watch on iOS.
 - Does it work remotely? Yes — sharing runs over Wi-Fi or mobile data, so the coach can be in another gym, city or country.
