@@ -117,9 +117,8 @@
 <article class="card card-wide">
 <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2-6 3 12 2.5-8L17 12h4"/></svg></div>
 <h3>Live heart rate sharing</h3>
-<p>Your BPM, trend line and effort zone stream out continuously. Coaches and teammates see the same number you do, with no perceptible lag.</p>
-<div class="zones"><span class="zone" style="background:var(--z1)"></span><span class="zone" style="background:var(--z2)"></span><span class="zone" style="background:var(--z3)"></span><span class="zone" style="background:var(--z4)"></span><span class="zone" style="background:var(--z5)"></span></div>
-<div class="zone-labels"><span>Recovery</span><span>Endurance</span><span>Cardio</span><span>Threshold</span><span>Peak</span></div>
+<p>Coaches see your BPM and zone, live.</p>
+<div class="zones"><div class="zone"><span style="background:var(--z1)"></span>Recovery</div><div class="zone"><span style="background:var(--z2)"></span>Endurance</div><div class="zone"><span style="background:var(--z3)"></span>Cardio</div><div class="zone"><span style="background:var(--z4)"></span>Threshold</div><div class="zone"><span style="background:var(--z5)"></span>Peak</div></div>
 </article>
 <article class="card card-third">
 <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div>
@@ -266,9 +265,7 @@ addEventListener('scroll',()=>h.classList.toggle('stuck',scrollY>8),{passive:tru
 const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 const faq=document.querySelectorAll('.faq details.qa');
-const mq=matchMedia('(max-width:980px)');
-const sync=()=>faq.forEach((d,i)=>{d.open=!mq.matches||i===0});
-mq.addEventListener('change',sync);sync();
+faq.forEach((d,i)=>{d.open=i===0});
 const b=document.querySelector('.float-a .bpm');let v=129,t=0;
 setInterval(()=>{t+=1;v=Math.max(112,Math.min(148,v+Math.round((Math.random()-.45)*5)));b.firstChild.nodeValue=v},1400);
 </script>
