@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy | HeartShare</title>
-<meta name="description" content="How HeartShare collects, uses and protects your data: account information, heart rate processed session-only, your GDPR and CCPA rights, retention, security and contact.">
+<meta name="description" content="How HeartShare collects, uses and protects your data: account information, heart rate processed session-only, optional anonymous usage statistics, your GDPR and CCPA rights, retention, security and contact.">
 <link rel="canonical" href="https://heartshare-app.github.io/privacy.html">
 <meta name="robots" content="index,follow,max-snippet:-1">
 <meta property="og:type" content="article">
@@ -44,7 +44,7 @@
 <span class="eyebrow">Legal</span>
 <h1>Privacy Policy</h1>
 <p>HeartShare collects the minimum data needed to run the service. Heart rate is processed on a session-only basis and is never used for advertising or marketing.</p>
-<p class="updated">Last updated: 22 September 2026</p>
+<p class="updated">Last updated: 22 November 2026</p>
 </div>
 </div>
 
@@ -74,6 +74,7 @@
 <ul>
 <li><strong>Account information:</strong> email address and password.</li>
 <li><strong>Health data:</strong> heart rate.</li>
+<li><strong>Usage statistics (optional, only if you allow it):</strong> which buttons you tap in the App and on which screen, and a random app-instance identifier. See <a href="#usage-stats">Usage statistics</a> below.</li>
 <li><strong>Subscription and billing information</strong> is handled securely by the App Store and Google Play. The App does not store or process payment details.</li>
 </ul>
 
@@ -84,12 +85,25 @@
 <li><strong>Sign in with Google:</strong> you authorize us to collect basic info, such as your email address and name. You can manage these permissions at any time within your Google account settings.</li>
 <li><strong>Heart rate data (biometric/health-related data)</strong> collected from compatible devices with your consent (e.g. Apple Watch, Xiaomi Mi Band 10, Garmin HRM, Garmin watches, Whoop, and other BLE-enabled wearables and heart-rate sensors). Heart rate may be collected via Bluetooth Low Energy (BLE) connections to supported devices, or via Apple HealthKit when you connect Apple Watch/Health permissions (Apple platforms only).</li>
 <li>The App may allow you to share your heart rate data with another user (for example, a trainer/coach) if you choose to enable that feature and select the recipient. You control whether and with whom you share.</li>
+<li><strong>Usage statistics</strong> are collected only after you tap <em>Allow</em> on the "Help us make HeartShare better" screen. See below.</li>
 </ul>
+
+<div class="callout" id="usage-stats">
+<h3>Usage statistics (Firebase Analytics)</h3>
+<p>We use Google Firebase Analytics to understand which features are used, so we can improve the App. It is <strong>off by default</strong>: nothing is sent until you tap <em>Allow</em> when the App asks, right after you sign in. The App asks each account once.</p>
+<ul>
+<li><strong>What is sent:</strong> the name of a button you tap (for example "Start sharing") and the name of the screen it is on, plus a few standard events Firebase records automatically (first open, session start, engagement time). Firebase also uses a random app-instance identifier and general device information (such as device model, OS version, app version and approximate country derived from your IP address).</li>
+<li><strong>What is never sent:</strong> your heart rate, your name, your email address, your device names or your access keys. We do not link usage statistics to your HeartShare account and do not use them for tracking or advertising.</li>
+<li><strong>How to change your mind:</strong> turn <em>Share usage stats</em> on or off at any time in <em>Settings → About</em>. When it is off, the App sends nothing.</li>
+</ul>
+<p>Usage statistics are processed by Google LLC as our service provider. See <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+</div>
 
 <h2 id="s3">3. Why we process your data</h2>
 <ul>
 <li><strong>To make our service available</strong> — we use the details you provide, functional data, and automatically collected information to make all the App's features and services available to you.</li>
 <li><strong>To show you more relevant ads and content</strong> — we may use automatically collected information for marketing purposes. However, we never use Health Data (heart rate) or data collected via Apple HealthKit for marketing or advertising purposes.</li>
+<li><strong>To improve the App</strong> — if you allow it, we use anonymous usage statistics (which buttons are tapped and on which screen) to see which features are used and where the App can be made easier. The legal basis is your consent, which you can withdraw at any time in Settings → About.</li>
 <li><strong>For peer-to-peer sharing</strong> — to facilitate the transmission of heart rate data to your designated Coach/Trainer at your explicit request.</li>
 <li><strong>To stay in touch with you</strong> — we use your contact details to send newsletters, marketing updates, requests for feedback, and important notices about our policies or terms.</li>
 </ul>
@@ -97,7 +111,7 @@
 <h2 id="s4">4. Your data protection rights</h2>
 <p>You have the following rights with respect to your personal data:</p>
 <ul>
-<li><strong>Right to Withdraw Consent</strong> — withdraw previously given consent to process your Personal Data.</li>
+<li><strong>Right to Withdraw Consent</strong> — withdraw previously given consent to process your Personal Data. For usage statistics, turn off <em>Share usage stats</em> in Settings → About.</li>
 <li><strong>Right to Be Informed</strong> — be informed about the collection and use of your Personal Data.</li>
 <li><strong>Right to Access</strong> — view and request copies of your Personal Data.</li>
 <li><strong>Right to Rectification</strong> — request correction of inaccurate or outdated information.</li>
@@ -117,6 +131,7 @@
 
 <h2 id="s5">5. Retention of Personal Data</h2>
 <p>We retain your account information (email address and password) for as long as your account remains active, and for a limited period thereafter as needed for security, backup, fraud prevention, and legal compliance. Where permitted by law, you may request deletion of your account and associated personal information.</p>
+<p>Usage statistics are kept by Google Analytics only for the limited retention period set in our Google Analytics settings and are then deleted automatically. They are not linked to your account.</p>
 <div class="callout"><strong>Heart rate is session-only.</strong> Once a session ends — manually or automatically after two (2) hours — the heart rate data from that session is no longer displayed and is not stored by us. If you share heart rate data with another user during an active session, that sharing occurs only for the duration of the session.</div>
 
 <h2 id="s6">6. Children's Privacy</h2>
@@ -168,7 +183,7 @@
 </div>
 <div class="foot-bottom">
 <span>© 2026 HeartShare · Developer: Roman Paraniuk</span>
-<span>Policy last updated <time datetime="2026-09-23">23 September 2026</time></span>
+<span>Policy last updated <time datetime="2026-11-22">22 November 2026</time></span>
 </div>
 </div>
 </footer>
@@ -177,7 +192,7 @@
 {"@type":"WebSite","@id":"https://heartshare-app.github.io/#website","url":"https://heartshare-app.github.io/","name":"HeartShare","description":"Real-time heart rate sharing app for athletes and coaches.","publisher":{"@id":"https://heartshare-app.github.io/#org"},"inLanguage":"en"},
 {"@type":"Organization","@id":"https://heartshare-app.github.io/#org","name":"HeartShare","url":"https://heartshare-app.github.io/","logo":{"@type":"ImageObject","@id":"https://heartshare-app.github.io/#logo","url":"https://heartshare-app.github.io/img/app-icon.png","width":1280,"height":1280},"email":"HeartShare.help@gmail.com","founder":{"@type":"Person","@id":"https://heartshare-app.github.io/#roman","name":"Roman Paraniuk"},"sameAs":["https://apps.apple.com/app/id6759251996","https://play.google.com/store/apps/details?id=com.rkh.heartshare"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"HeartShare.help@gmail.com","availableLanguage":"English"}},
 {"@type":"ImageObject","@id":"https://heartshare-app.github.io/#ogimage","url":"https://heartshare-app.github.io/img/og-image.jpg","width":1200,"height":630,"caption":"HeartShare — your coach sees every beat, live"},
-{"@type":"WebPage","@id":"https://heartshare-app.github.io/privacy.html#webpage","url":"https://heartshare-app.github.io/privacy.html","name":"Privacy Policy | HeartShare","description":"How HeartShare collects, uses and protects your data: account information, heart rate processed session-only, your GDPR and CCPA rights, retention, security and contact.","isPartOf":{"@id":"https://heartshare-app.github.io/#website"},"inLanguage":"en","datePublished":"2026-03-25","dateModified":"2026-09-23","primaryImageOfPage":{"@id":"https://heartshare-app.github.io/#ogimage"},"publisher":{"@id":"https://heartshare-app.github.io/#org"},"breadcrumb":{"@id":"https://heartshare-app.github.io/privacy.html#breadcrumb"},"about":{"@id":"https://heartshare-app.github.io/#org"}},
+{"@type":"WebPage","@id":"https://heartshare-app.github.io/privacy.html#webpage","url":"https://heartshare-app.github.io/privacy.html","name":"Privacy Policy | HeartShare","description":"How HeartShare collects, uses and protects your data: account information, heart rate processed session-only, optional anonymous usage statistics, your GDPR and CCPA rights, retention, security and contact.","isPartOf":{"@id":"https://heartshare-app.github.io/#website"},"inLanguage":"en","datePublished":"2026-03-25","dateModified":"2026-11-22","primaryImageOfPage":{"@id":"https://heartshare-app.github.io/#ogimage"},"publisher":{"@id":"https://heartshare-app.github.io/#org"},"breadcrumb":{"@id":"https://heartshare-app.github.io/privacy.html#breadcrumb"},"about":{"@id":"https://heartshare-app.github.io/#org"}},
 {"@type":"BreadcrumbList","@id":"https://heartshare-app.github.io/privacy.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"HeartShare","item":"https://heartshare-app.github.io/"},{"@type":"ListItem","position":2,"name":"Privacy policy","item":"https://heartshare-app.github.io/privacy.html"}]}
 ]}
 </script>
